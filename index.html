@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Survey Form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">
+            Survey Form
+        </h1>
+    </header>
+    <main>
+        <p id="description">
+            Let me know how I can improve my Web Development Learning.
+        </p>
+        <form action="" id="survey-form">
+
+            <label for="name" id="name-label">Name: </label>
+            <input type="text" id="name" placeholder="Your Name">
+            <label for="email" id="email-label">Email: </label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <label for="number" id="number-label">Age: </label>
+            <input type="text" id="number" placeholder="Your Age" required>
+
+            <label for="dropdown">Which web development speciality should I choose? </label>
+            <select name="dropdown" id="dropdown">
+                <option value="">Front-end</option>
+                <option value="">Back-end</option>
+                <option value="">Sysadmin</option>
+                <option value="">Full-stack</option>
+            </select>
+
+
+            <label>
+                Which skills should I have?:
+            </label>
+
+            <div id="group-1">
+                <label>
+                    <input type="checkbox" name="skills">HTML</label>
+                <label>
+                    <input type="checkbox" name="skills">CSS</label>
+                <label>
+                    <input type="checkbox" name="skills">CSS Frameworks</label>
+                <label>
+                    <input type="checkbox" name="skills" id="item4">Javascript</label>
+                <label>
+                    <input type="checkbox" name="skills">Responsive Web Design</label>
+                <label>
+                    <input type="checkbox" name="skills">Version Control</label>
+                <label>
+                    <input type="checkbox" name="skills">Browser Development Tools</label>
+                <label>
+                    <input type="checkbox" name="skills">Testing</label>
+                <label>
+                    <input type="checkbox" name="skills">Programming Languages
+                </label>
+            </div>
+
+            <label>Which programming language should I learn?</label>
+
+            <div id="group-2">
+                <label>
+                    <input type="radio" name="languages" value="1">C++</label>
+                <label>
+                    <input type="radio" name="languages" value="2">C#</label>
+                <label>
+                    <input type="radio" name="languages" value="3">Java</label>
+                <label>
+                    <input type="radio" name="languages" value="4">Python</label>
+            </div>
+
+            <label for="message">Any comments or suggestions?</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+
+            <div id="group-3">
+                <button type="submit"><i class="far fa-envelope"></i>Send</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>
