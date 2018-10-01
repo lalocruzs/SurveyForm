@@ -29,11 +29,11 @@
         <form action="" id="survey-form">
 
             <label for="name" id="name-label">Name: </label>
-            <input type="text" id="name" placeholder="Your Name">
+            <input type="text" id="name" placeholder="Your Name" required>
             <label for="email" id="email-label">Email: </label>
             <input type="email" id="email" placeholder="Your Email" required>
             <label for="number" id="number-label">Age: </label>
-            <input type="text" id="number" placeholder="Your Age" required>
+            <input type="number" id="number" placeholder="Your Age" required>
 
             <label for="dropdown">Which web development speciality should I choose? </label>
             <select name="dropdown" id="dropdown">
@@ -50,23 +50,23 @@
 
             <div id="group-1">
                 <label>
-                    <input type="checkbox" name="skills">HTML</label>
+                    <input type="checkbox" name="skills" value="html">HTML</label>
                 <label>
-                    <input type="checkbox" name="skills">CSS</label>
+                    <input type="checkbox" name="skills" value="css">CSS</label>
                 <label>
-                    <input type="checkbox" name="skills">CSS Frameworks</label>
+                    <input type="checkbox" name="skills" value="frameworks">CSS Frameworks</label>
                 <label>
-                    <input type="checkbox" name="skills" id="item4">Javascript</label>
+                    <input type="checkbox" name="skills" id="item4" value="javascript">Javascript</label>
                 <label>
-                    <input type="checkbox" name="skills">Responsive Web Design</label>
+                    <input type="checkbox" name="skills" value="responsive">Responsive Web Design</label>
                 <label>
-                    <input type="checkbox" name="skills">Version Control</label>
+                    <input type="checkbox" name="skills" value="versioncontrol">Version Control</label>
                 <label>
-                    <input type="checkbox" name="skills">Browser Development Tools</label>
+                    <input type="checkbox" name="skills" value="browser">Browser Development Tools</label>
                 <label>
-                    <input type="checkbox" name="skills">Testing</label>
+                    <input type="checkbox" name="skills" value="testing">Testing</label>
                 <label>
-                    <input type="checkbox" name="skills">Programming Languages
+                    <input type="checkbox" name="skills" value="programming">Programming Languages
                 </label>
             </div>
 
@@ -88,7 +88,7 @@
 
 
             <div id="group-3">
-                <button type="submit"><i class="far fa-envelope"></i>Send</button>
+                <button type="submit" id="submit"><i class="far fa-envelope"></i>Send</button>
             </div>
 
         </form>
