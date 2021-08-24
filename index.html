@@ -1,99 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Survey Form</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
-
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-
 <body>
-    <header>
-        <h1 id="title">
-            Survey Form
-        </h1>
-    </header>
-    <main>
-        <p id="description">
-            Let me know how I can improve my Web Development Learning.
-        </p>
-        <form action="" id="survey-form">
-
-            <label for="name" id="name-label">Name: </label>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <label for="email" id="email-label">Email: </label>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <label for="number" id="number-label">Age: </label>
-            <input type="number" id="number" placeholder="Your Age" min=15 max=60 required>
-
-            <label for="dropdown">Which web development speciality should I choose? </label>
-            <select name="dropdown" id="dropdown">
-                <option value="">Front-end</option>
-                <option value="">Back-end</option>
-                <option value="">Sysadmin</option>
-                <option value="">Full-stack</option>
-            </select>
-
-
-            <label>
-                Which skills should I have?:
-            </label>
-
-            <div id="group-1">
-                <label>
-                    <input type="checkbox" name="skills" value="html">HTML</label>
-                <label>
-                    <input type="checkbox" name="skills" value="css">CSS</label>
-                <label>
-                    <input type="checkbox" name="skills" value="frameworks">CSS Frameworks</label>
-                <label>
-                    <input type="checkbox" name="skills" id="item4" value="javascript">Javascript</label>
-                <label>
-                    <input type="checkbox" name="skills" value="responsive">Responsive Web Design</label>
-                <label>
-                    <input type="checkbox" name="skills" value="versioncontrol">Version Control</label>
-                <label>
-                    <input type="checkbox" name="skills" value="browser">Browser Development Tools</label>
-                <label>
-                    <input type="checkbox" name="skills" value="testing">Testing</label>
-                <label>
-                    <input type="checkbox" name="skills" value="programming">Programming Languages
-                </label>
-            </div>
-
-            <label>Which programming language should I learn?</label>
-
-            <div id="group-2">
-                <label>
-                    <input type="radio" name="languages" value="1">C++</label>
-                <label>
-                    <input type="radio" name="languages" value="2">C#</label>
-                <label>
-                    <input type="radio" name="languages" value="3">Java</label>
-                <label>
-                    <input type="radio" name="languages" value="4">Python</label>
-            </div>
-
-            <label for="message">Any comments or suggestions?</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-
-            <div id="group-3">
-                <button type="submit" id="submit"><i class="far fa-envelope"></i>Send</button>
-            </div>
-
-        </form>
-    </main>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <div class="container">
+    <div class="left-container">
+      <h1 id="title">
+        Career Path Form
+      </h1>
+      <p id="description">
+        Tell us how we can help you to develop your tech career path
+      </p>
+      <img src="./assets/img/undraw_to_the_moon_v1mv.svg" alt="A space ship">
+    </div>
+    <div class="right-container">
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" placeholder="Eduardo Cruz" id="name" required>
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" placeholder="mail@mail.com" id="email" required>
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" placeholder="algo" id="number" min="1" max="15" required>
+        
+        <label for="dropdown" id="dropdown-label">What do you want to learn?</label>
+    
+        <select name="" id="dropdown">
+          <option value="frontend" selected>FrontEnd</option>
+          <option value="backend">BackEnd</option>
+          <option value="Systems Administration">Systems Administration</option>
+          <option value="DevOps">DevOps</option>
+        </select>
+    
+        <p>Select one of these programming languages</p>
+        <label for="C#">C#</label>
+        <input type="radio" name="languages" id="C#" value="C#">
+        <label for="C++">C++</label>
+        <input type="radio" name="languages" id="C++" value="C++">
+        <label for="Python">Python</label>
+        <input type="radio" name="languages" id="Python" value="Python">
+        <label for="Javascript">Javascript</label>
+        <input type="radio" name="languages" id="Javascript" value="Javascript">
+    
+        <p>Which of these skills you already know?</p>
+        <label for="html-css">Basic HTML and CSS</label>
+        <input type="checkbox" name="skills" id="html-css" value="Basic HTML and CSS"> 
+    
+        <label for="git-github">Git and GitHub</label>
+        <input type="checkbox" name="skills" id="git-github" value="Git and GitHub"> 
+      
+        <label for="databases">Basic databases</label>
+        <input type="checkbox" name="skills" id="databases"  value="Basic databases"> 
+    
+        <label for="operative-systems">Basic Linux and Windows</label>
+        <input type="checkbox" name="skills" id="operative-systems" value="Basic Linux and Windows"> 
+    
+        <label for="message">Write some words about you</label>
+        <textarea id="message" cols="30" rows="10"></textarea>
+    
+        <input type="submit" value="submit" id="submit">
+    
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
-
 </html>
