@@ -15,7 +15,7 @@
         Career Path Form
       </h1>
       <p id="description">
-        Tell us how we can help you to develop your tech career path
+        Tell us how we can help you to develop your tech career
       </p>
       <div class="img-container"><img src="./assets/img/undraw_to_the_moon_v1mv.svg" alt="A space ship"></div>
     </div>
@@ -23,14 +23,11 @@
       <form action="" id="survey-form">
         <div class="contact-info">
           <label for="name" id="name-label">Name:</label>
-          <input type="text" placeholder="Eduardo Cruz" id="name" required>
+          <input type="text" placeholder="Mike Wazowski" id="name" required>
           <label for="email" id="email-label">Email:</label>
-          <input type="email" placeholder="mail@mail.com" id="email" required>
-          <label for="number" id="number-label">Number:</label>
-          <input type="number" placeholder="algo" id="number" min="1" max="15" required>
-        </div>
-        
-        <div class="career-info">
+          <input type="email" placeholder="mail@monsters.inc.com" id="email" required>
+          <label for="number" id="number-label">How many hours you have to study per week?</label>
+          <input type="number" placeholder="15 hours per week max" id="number" min="1" max="15" required>
           <label for="dropdown" id="dropdown-label">What do you want to learn?</label>
           <select name="" id="dropdown">
             <option value="frontend" selected>FrontEnd</option>
@@ -39,30 +36,55 @@
             <option value="DevOps">DevOps</option>
           </select>
         </div>
-    
+        
         <div class="learn-info">
+          <div class="skills-info">
+            <p>Which of these skills you already have?</p>
+            <div class="skill">
+              <input type="checkbox" name="skills" id="html-css" value="Basic HTML and CSS">
+              <label for="html-css">HTML and CSS basics</label>
+            </div>
+            <div class="skill">
+              <input type="checkbox" name="skills" id="git-github" value="Git and GitHub">
+              <label for="git-github">Git and GitHub</label>
+            </div>
+            <div class="skill">
+              <input type="checkbox" name="skills" id="databases"  value="Basic databases">
+              <label for="databases">Database basics</label>
+            </div>
+            <div class="skill">
+              <input type="checkbox" name="skills" id="operative-systems" value="Basic Linux and Windows">
+              <label for="operative-systems">Linux and Windows basics</label>
+            </div>
+            <div class="skill">
+              <input type="checkbox" name="skills" id="networks" value="Basic Linux and Windows">
+              <label for="operative-systems">Network basics</label>
+            </div>
+          </div>
           <div class="programming-info">
             <p>Select one of these programming languages</p>
-            <label for="C#">C#</label>
-            <input type="radio" name="languages" id="C#" value="C#">
-            <label for="C++">C++</label>
-            <input type="radio" name="languages" id="C++" value="C++">
-            <label for="Python">Python</label>
-            <input type="radio" name="languages" id="Python" value="Python">
-            <label for="Javascript">Javascript</label>
-            <input type="radio" name="languages" id="Javascript" value="Javascript">
+            <div class="language">
+              <input type="radio" name="languages" id="C#" value="C#">
+              <label for="C#">C#</label>
+            </div>
+            <div class="language">
+              <input type="radio" name="languages" id="C++" value="C++">
+              <label for="C++">C++</label>
+            </div>
+            <div class="language">
+              <input type="radio" name="languages" id="Python" value="Python">
+              <label for="Python">Python</label>
+            </div>
+            <div class="language">
+              <input type="radio" name="languages" id="Javascript" value="Javascript">
+              <label for="Javascript">Javascript</label>
+            </div>
+            <div class="language">
+              <input type="radio" name="languages" id="Java" value="Java">
+              <label for="Java">Java</label>
+            </div>
           </div>
-          <div class="skills-info">
-            <p>Which of these skills you already know?</p>
-            <label for="html-css">Basic HTML and CSS</label>
-            <input type="checkbox" name="skills" id="html-css" value="Basic HTML and CSS">
-            <label for="git-github">Git and GitHub</label>
-            <input type="checkbox" name="skills" id="git-github" value="Git and GitHub">
-            <label for="databases">Basic databases</label>
-            <input type="checkbox" name="skills" id="databases"  value="Basic databases">
-            <label for="operative-systems">Basic Linux and Windows</label>
-            <input type="checkbox" name="skills" id="operative-systems" value="Basic Linux and Windows">
-          </div>
+          
         </div>
         <label for="message">Write some words about you</label>
         <textarea id="message" cols="30" rows="10"></textarea>
