@@ -6,6 +6,7 @@
   --texto-SM: 1.4rem;
   --texto-L: 1.6rem;
   --verde: rgba(236, 244, 238, 0.5);
+  --verde-border: #52B87A;
 
 }
 
@@ -33,7 +34,15 @@ img{
   width: 100%;
 }
 
+*:focus{
+  outline: none;
+}
+
 /* Global Container */
+.container{
+  display: grid;
+}
+
 @media (min-width: 768px){
   .container{
     margin: 0 auto;
@@ -52,11 +61,81 @@ img{
   text-align: center;
 }
 
+#description{
+  text-align: center;
+}
+
 .img-container{
   width: 90%;
   margin: 0 auto;
 }
+/* Right Container */
+.right-container{
+  padding: 0 16px;
+}
 
+#survey-form{
+  margin-top: 20px;
+}
+.contact-info{
+
+}
+
+.contact-info label{
+  display: block;
+  margin-top: 20px;
+}
+.contact-info input{
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: 1px solid #868686;
+  border-radius: 4px;
+}
+
+.contact-info input:focus{
+  border: 1px solid var(--verde-border);
+}
+
+.contact-info input:focus:invalid{
+  border-color: red;
+}
+
+.contact-info #dropdown{
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: white;
+  border: 1px solid #868686;
+  border-radius: 4px;
+}
+
+/* Learn Info */
+
+.skills-info, .programming-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+}
+
+.skills-info p, .programming-info p{
+  grid-column: 1 / 3;
+}
+
+.skill, .language{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.skill label, .language label{
+  margin-left: 8px;
+}
+
+.skill input:focus, .language input:focus{
+  border: 1px solid var(--verde-border);
+  
+}
 
 
 
