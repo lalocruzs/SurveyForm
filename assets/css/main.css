@@ -1,0 +1,62 @@
+:root {
+  --h2-SM: 2.4rem;
+  --h2-L: 3.6rem;
+  --h3-SM: 1.8rem;
+  --h3-L: 2.4rem;
+  --texto-SM: 1.4rem;
+  --texto-L: 1.6rem;
+  --verde: rgba(236, 244, 238, 0.5);
+
+}
+
+/* Globales */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  width: 100%;
+}
+
+/* Global Container */
+@media (min-width: 768px){
+  .container{
+    margin: 0 auto;
+  }
+}
+
+
+/* Left Container */
+.left-container{
+  height: 400px;
+  background-color: var(--verde);
+}
+
+#title{
+  margin: 0;
+  text-align: center;
+}
+
+.img-container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+
