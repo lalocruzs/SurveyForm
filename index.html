@@ -22,26 +22,34 @@
     <div class="right-container">
       <form action="" id="survey-form">
         <div class="contact-info">
-          <label for="name" id="name-label">Name:</label>
-          <input type="text" placeholder="Mike Wazowski" id="name" required>
-          <label for="email" id="email-label">Email:</label>
-          <input type="email" placeholder="mail@monsters.inc.com" id="email" required>
-          <label for="number" id="number-label">How many hours you have to study per week?</label>
-          <input type="number" placeholder="15 hours per week max" id="number" min="1" max="15" required>
-          <label for="dropdown" id="dropdown-label">What do you want to learn?</label>
-          <select name="" id="dropdown">
-            <option value="frontend" selected>FrontEnd</option>
-            <option value="backend">BackEnd</option>
-            <option value="Systems Administration">Systems Administration</option>
-            <option value="DevOps">DevOps</option>
-          </select>
+          <div class="contact__input">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" placeholder="Mike Wazowski" id="name" required>
+          </div>
+          <div class="contact__input">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" placeholder="mail@monsters.inc.com" id="email" required>
+          </div>
+          <div class="contact__input">
+            <label for="number" id="number-label">How many hours you have to study per week?</label>
+            <input type="number" placeholder="15 hours per week max" id="number" min="1" max="15" required>
+          </div>
+          <div class="contact__input">
+            <label for="dropdown" id="dropdown-label">What do you want to learn?</label>
+            <select name="" id="dropdown">
+              <option value="frontend" selected>FrontEnd</option>
+              <option value="backend">BackEnd</option>
+              <option value="Systems Administration">Systems Administration</option>
+              <option value="DevOps">DevOps</option>
+            </select>
+          </div>
         </div>
         
         <div class="learn-info">
           <div class="skills-info">
             <p>Which of these skills you already have?</p>
             <div class="skill">
-              <input type="checkbox" name="skills" id="html-css" value="Basic HTML and CSS">
+              <input type="checkbox" name="skills" id="html-css" value="Basic HTML and CSS" checked>
               <label for="html-css">HTML and CSS basics</label>
             </div>
             <div class="skill">
@@ -64,7 +72,7 @@
           <div class="programming-info">
             <p>Select one of these programming languages</p>
             <div class="language">
-              <input type="radio" name="languages" id="C#" value="C#">
+              <input type="radio" name="languages" id="C#" value="C#" checked>
               <label for="C#">C#</label>
             </div>
             <div class="language">
@@ -86,14 +94,18 @@
           </div>
           
         </div>
-        <label for="message">Write some words about you</label>
-        <textarea id="message" cols="30" rows="10"></textarea>
+
+        <label for="message" id="message-label">Write some words about you</label>
+        <textarea id="message" cols="30" rows="10" placeholder="I would like to learn..."></textarea>
     
-        <input type="submit" value="submit" id="submit">
+        <div class="button"><input type="submit" value="submit" id="submit"></div>
     
       </form>
     </div>
   </div>
+  <footer>
+    <p>Made By Eduardo Cruz</p>
+  </footer>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
